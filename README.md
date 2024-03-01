@@ -11,10 +11,12 @@ $acct = "JOE"
 ```
 
 ## Use
-All three files hideWinUser.bat, EnumAdmins.ps1, and SpecialAccounts.ps1 must be in the same directory. Right-click hideWinUser and 'Run as administrator'.
+All three files **hideWinUser.bat**, **EnumAdmins.ps1**, and **SpecialAccounts.ps1** must be in the same directory.  
+Right-click hideWinUser and 'Run as administrator'.  
 
 ## Notes
-I'm not going to tell you what to do, but you'd be a fool not to create a System Restore point before running this.  
+⚠️I'm not going to tell you what to do, but you'd be a fool not to create a System Restore point before running this.⚠️  
+
 This script essentially adds the following two registry keys:  
 
 This key enables you to manually enter the local administrator account in UAC popups.  
@@ -30,7 +32,7 @@ This key specifies the account to hide from the Windows Logon screen.
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList]
-"IT"=dword:00000000
+"JOE"=dword:00000000
 ```
 
 ## Credits
